@@ -4,7 +4,6 @@ using MidiJack;
 
 public class MIDIDisplay : MonoBehaviour
 {
-	float deltaTime = 0.0f;
 	private string s;
 	private MidiChannel[] channels;
 	private bool display = false;
@@ -14,7 +13,6 @@ public class MIDIDisplay : MonoBehaviour
 	}
 
 	void Update(){
-		deltaTime += (Time.deltaTime - deltaTime) * 0.1f;
 		testMidiNotes();
 		checkInput();
 	}
