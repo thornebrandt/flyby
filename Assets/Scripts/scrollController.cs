@@ -502,8 +502,8 @@ public class scrollController : MonoBehaviour {
         //TODO - put particle direction in here
         GameObject parent = obj.transform.parent.gameObject;
         Scroll scrollScript = (Scroll) parent.GetComponent(typeof(Scroll));
-        scrollScript.xSpeed = 0;
-        scrollScript.ySpeed = Mathf.Min(o.scrollX * vel, -10f);
+        scrollScript.xSpeed = o.scrollX * vel;
+        scrollScript.ySpeed = Mathf.Min(o.scrollY * vel, -10f);
         if(o.spinSpeed != 0){
             if(o.rotateRandom != 0){
                 scrollScript.spinSpeed = Random.Range(-o.spinSpeed, o.spinSpeed);

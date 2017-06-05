@@ -1,0 +1,67 @@
+{
+    "noVelocityChannel" : 0,
+    "parts":[
+    
+        {
+            "id" : "0",
+            "name" : "roots1_ditka",
+            "objs" : [
+            ],
+            "particles" : [
+                {
+                    "name" : "img/ditka/ditka2.png",
+                    "keyStroke" : "1",
+                    "midiNote" : "9",
+                    "midiChannel" : "0",
+                    "numInstances" : "12"
+                }
+            ]
+        },
+        {
+            "id" : "1",
+            "name" : "roots2_food",
+            "objs" : [
+                {
+                    "keyStroke": "4",
+                    "midiNote": "12",
+                    "midiChannel" : "0",
+                    "name": "img/food/onion_ring.png",
+                    "direction" : "down",
+                    "scrollY" : "-10",
+                    "scrollX" : "-10",
+                    "spinSpeed" : "300",
+                    "scale" : ".8",
+                    "rotateRandom" : "180"
+                }
+            ],
+            "particles" : [
+                {
+                    "name" : "img/food/french_fry1.png",
+                    "keyStroke" : "1",
+                    "midiNote" : "9",
+                    "midiChannel" : "0",
+                    "rotation" : "random",
+                    "numParticles" : "50"
+                },
+                {
+                    "name" : "img/food/french_fry2.png",
+                    "keyStroke" : "2",
+                    "midiNote" : "10",
+                    "midiChannel" : "0",
+                    "numParticles" : "50",
+                    "rotation" : "gravity"
+                },
+                {
+                    "name" : "img/food/french_fry3.png",
+                    "keyStroke" : "3",
+                    "midiNote" : "11",
+                    "midiChannel" : "0",
+                    "numParticles" : "50",
+                    "rotation" : "gravity"
+                }
+            ]
+        },
+
+
+    ]
+}
